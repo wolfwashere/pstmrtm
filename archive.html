@@ -5,6 +5,7 @@
   <title>The Archive — pstmrtm.net</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/modal.css">
 </head>
 <body>
 
@@ -16,7 +17,7 @@
   <div class="section">
     <ul>
       <li><em>[ entry missing ]</em> — Data retrieval failed (code 7F3D)</li>
-      <li><em>[ artifact unavailable ]</em> — Integrity checksum mismatch</li>
+      <li><a href="#" onclick="openArtifact('/artifacts/documents/log1.txt')">log1.txt</a> — [autolog fragment]</li>
       <li><a href="#">artifact3.jpg</a> — [pending retrieval]</li>
       <li><em>[ unknown record ]</em> — No metadata found</li>
       <li><a href="#">static-log.txt</a> — [partially recovered]</li>
@@ -25,6 +26,17 @@
 
   <div class="section">
     <p><em>Additional entries may surface without prior notification.</em></p>
+  </div>
+
+
+  <script src="/js/modal.js"></script>
+
+  <!-- Modal -->
+  <div id="artifactModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeArtifact()">&times;</span>
+      <div id="artifactContent">Loading...</div>
+    </div>
   </div>
 
 </body>
