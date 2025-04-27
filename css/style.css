@@ -43,6 +43,7 @@ a:hover {
 /* Sections */
 .section {
     margin-bottom: 3em;
+    padding-left: 2em;
 }
 
 /* Subtle Flicker (optional use later) */
