@@ -1,0 +1,74 @@
+/* Base Liminal Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #0a0a0a;
+    color: #d0d0d0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #eeeeee;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.05em;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1.2em;
+    opacity: 0.85;
+}
+
+/* Links */
+a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 3em;
+}
+
+/* Subtle Flicker (optional use later) */
+@keyframes flicker {
+    0% { opacity: 0.9; }
+    50% { opacity: 0.4; }
+    100% { opacity: 0.8; }
+}
+
+.flicker {
+    animation: flicker 2s infinite alternate;
+}
+
+/* Centered container (for pages like Landing, Entry, etc.) */
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+/* Soft border for "framed" elements */
+.frame {
+    border: 1px solid #333;
+    padding: 1.5em;
+    margin: 1em;
+}
