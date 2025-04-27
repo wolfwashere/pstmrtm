@@ -1,5 +1,3 @@
-// Modal Popup Controls for Artifact Viewing
-
 function openArtifact(url) {
   const modal = document.getElementById('artifactModal');
   const content = document.getElementById('artifactContent');
@@ -11,10 +9,11 @@ function openArtifact(url) {
     // It's an image
     const img = document.createElement('img');
     img.src = url;
-    img.style.maxWidth = '100%';
-    img.style.height = 'auto';
+    img.style.maxWidth = '80%'; /* uniform sizing */
+    img.style.height = 'auto'; /* preserve aspect ratio */
     img.style.display = 'block';
-    img.style.margin = '0 auto';
+    img.style.margin = '2em auto'; /* nicely centered */
+    img.style.border = '1px solid #333'; /* optional: light eerie border */
     content.appendChild(img);
     modal.style.display = "block";
   } else {
