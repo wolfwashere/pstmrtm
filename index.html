@@ -1,1 +1,56 @@
-<h1>Coming soon to pstmrtm.net</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>pstmrtm.net</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+      font-family: 'Courier New', Courier, monospace;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      line-height: 1.6em;
+      opacity: 0.8;
+    }
+
+    .static-line {
+      margin-top: 2em;
+      font-size: 0.9em;
+      color: #777;
+      animation: flicker 2s infinite alternate;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 0.8; }
+      45% { opacity: 0.5; }
+      55% { opacity: 0.9; }
+      100% { opacity: 0.7; }
+    }
+  </style>
+</head>
+<body>
+  <h1>pstmrtm.net</h1>
+  <p>The structure persists even when no one remains.<br>  
+  You were not expected, yet you arrived.</p>
+  <div class="static-line">[signal unstable]</div>
+</body>
+</html>
